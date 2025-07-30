@@ -43,6 +43,7 @@ const NoteDetailPage = () => {
       console.error("Error deleting note:", error);
     }
   }
+  
   const handleUpdate = async (e) => {
     if (!note.title.trim() || !note.content.trim()) {
       toast.error("Title and content cannot be empty");
