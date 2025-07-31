@@ -7,7 +7,7 @@ import api from "../lib/axios.js";
 import NotesNotFound from "../components/NotesNotFound";
 
 const HomePage = () => {
-  const [ isRateLimited, setIsRateLimited ] = useState(true);
+  const [ isRateLimited, setIsRateLimited ] = useState(false);
   const [ notes, setNotes ] = useState([]);
   const [ loading, setLoading ] = useState(true);
 
